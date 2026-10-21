@@ -1,0 +1,56 @@
+﻿<Window x:Class="autoverseny.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:autoverseny"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="start" Content="Start" Width="90" Height="45" Grid.Row="1" Background="CornflowerBlue" Click="start_Click"/>
+        <Canvas x:Name="palya" Background="Gray" Grid.Row="3">
+            <Button x:Name="auto" Content="Ferrari" Width="90" Height="45" Background="Red"
+                        Canvas.Left="20" Canvas.Top="50"/>
+            <Button x:Name="auto2" Content="Toyota" Width="90" Height="45" Background="Purple"
+                        Canvas.Left="20" Canvas.Top="120"/>
+            <Button x:Name="auto3" Content="Suzuki" Width="90" Height="45" Background="Tan"
+                        Canvas.Left="20" Canvas.Top="190"/>
+            <Button x:Name="auto4" Content="Dodge" Width="90" Height="45" Background="Green"
+                        Canvas.Left="20" Canvas.Top="260"/>
+            <TextBlock Canvas.Left="740" TextWrapping="Wrap" Height="324" Width="44" HorizontalAlignment="Center" VerticalAlignment="Top" Background="Black" RenderTransformOrigin="0.5,0.5">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock Height="20" Canvas.Left="740" TextWrapping="Wrap" Text="" Width="22" Background="White" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBlock Height="20" Canvas.Left="762" TextWrapping="Wrap" Text="" Canvas.Top="20" Width="22" Background="White" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBlock Height="20" Canvas.Left="740" TextWrapping="Wrap" Text="" Canvas.Top="40" Width="22" Background="White" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBlock Height="20" Canvas.Left="762" TextWrapping="Wrap" Text="" Canvas.Top="60" Width="22" Background="White" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBlock Height="20" Canvas.Left="740" TextWrapping="Wrap" Text="" Canvas.Top="80" Width="22" Background="White" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBlock Height="20" Canvas.Left="740" TextWrapping="Wrap" Text="" Canvas.Top="40" Width="22" Background="White" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBlock Height="20" Canvas.Left="740" TextWrapping="Wrap" Text="" Canvas.Top="120" Width="22" Background="White" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBlock Height="20" Canvas.Left="762" TextWrapping="Wrap" Text="" Canvas.Top="100" Width="22" Background="White" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBlock Height="20" Canvas.Left="762" TextWrapping="Wrap" Text="" Canvas.Top="140" Width="22" Background="White" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBlock Height="20" Canvas.Left="762" TextWrapping="Wrap" Text="" Canvas.Top="180" Width="22" Background="White" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBlock Height="20" Canvas.Left="740" TextWrapping="Wrap" Text="" Canvas.Top="160" Width="22" Background="White" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBlock Height="20" Canvas.Left="740" TextWrapping="Wrap" Text="" Canvas.Top="200" Width="22" Background="White" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBlock Height="20" Canvas.Left="762" TextWrapping="Wrap" Text="" Canvas.Top="220" Width="22" Background="White" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBlock Height="20" Canvas.Left="740" TextWrapping="Wrap" Text="" Canvas.Top="240" Width="22" Background="White" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBlock Height="20" Canvas.Left="762" TextWrapping="Wrap" Text="" Canvas.Top="260" Width="22" Background="White" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBlock Height="20" Canvas.Left="740" TextWrapping="Wrap" Text="" Canvas.Top="280" Width="22" Background="White" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBlock Height="20" Canvas.Left="762" TextWrapping="Wrap" Text="" Canvas.Top="300" Width="22" Background="White" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        </Canvas>
+
+    </Grid>
+</Window>
